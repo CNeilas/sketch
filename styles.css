@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    width: 800px;
+    height: 800px;
+    outline: 2px solid black;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.box {
+    flex: 1, 1, 0;
+    border: 1px solid black;
+}
+
+#slider {
+    margin-top: 30px;
+    width: 800px;
+}
+
+.black {
+    background-color: gray;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px;
+    width: 200px;
+}
+
+button:hover {
+    background-color: gray;
+}
