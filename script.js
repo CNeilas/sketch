@@ -5,8 +5,8 @@ const button = document.querySelector("button")
 let containerSize
 
 //so it would start off at the right size
-if (container.offsetWidth == 400) {
-     containerSize = 400
+if (container.offsetWidth == 300) {
+     containerSize = 300
 } else {
     containerSize = 800
 }
@@ -14,8 +14,8 @@ if (container.offsetWidth == 400) {
 window.onresize = function () {
 
     // i just put in slider function from below to basically reset the whole thing so it would resize for smaller screens when the screen size is changed
-    if (container.offsetWidth == 400) {
-        containerSize = 400
+    if (container.offsetWidth == 300) {
+        containerSize = 300
         container.innerHTML = ""
         const sliderValue = slider.value
         size = sliderValue
