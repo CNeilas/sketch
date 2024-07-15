@@ -2,8 +2,14 @@ const container = document.getElementById("container")
 const slider = document.getElementById("slider")
 const output = document.querySelector("output")
 const button = document.querySelector("button")
+let containerSize
 
-let containerSize = 800
+//so it would start off at the right size
+if (container.offsetWidth == 400) {
+     containerSize = 400
+} else {
+    containerSize = 800
+}
 
 window.onresize = function () {
 
